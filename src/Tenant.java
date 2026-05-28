@@ -4,15 +4,16 @@ public class Tenant {
     private String apartmentOrStoreNumber;  // 1A
     private double monthlyRent; // $1,400.00
     private boolean isCommercial;
-    private double latefee; // monthlyRent * 5%
+    private double totalBalance;
 
-    public Tenant(String name, String buildingAddress, String apartmentOrStoreNumber, double monthlyRent, boolean isCommercial, double latefee) {
+
+    public Tenant(String name, String buildingAddress, String apartmentOrStoreNumber, double monthlyRent, boolean isCommercial, double totalBalance) {
         this.name = name;
         this.buildingAddress = buildingAddress;
         this.apartmentOrStoreNumber = apartmentOrStoreNumber;
         this.monthlyRent = monthlyRent;
         this.isCommercial = isCommercial;
-        this.latefee = latefee;
+        this.totalBalance = totalBalance;
     }
 
     public String getName() {
@@ -55,13 +56,8 @@ public class Tenant {
         isCommercial = commercial;
     }
 
-    public double getLateFee() {
-        if (this.isCommercial) {
-            return this.monthlyRent * 0.05; // default to 5% late fee
-        } else {
-            return 0.0;
-        }
+    public double getTotalBalance() {
+        return totalBalance;
     }
-
 
 }
