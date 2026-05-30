@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Tenant {
     private String name;    // John Doe
     private String buildingAddress; // 123 John Street
@@ -5,6 +7,8 @@ public class Tenant {
     private double monthlyRent; // $1,400.00
     private boolean isCommercial;
     private double totalBalance;
+
+    private ArrayList<RentPayment> payments;
 
 
     public Tenant(String name, String buildingAddress, String apartmentOrStoreNumber, double monthlyRent, boolean isCommercial, double totalBalance) {
@@ -14,6 +18,7 @@ public class Tenant {
         this.monthlyRent = monthlyRent;
         this.isCommercial = isCommercial;
         this.totalBalance = totalBalance;
+        this.payments = new ArrayList<>();
     }
 
     public String getName() {
