@@ -75,8 +75,37 @@ public class Tenant {
         return totalBalance;
     }
 
-
     public void addPayment(RentPayment payment) {   // Takes one month of payment and adds it to the arraylist payments
         this.payments.add(payment);
     }
+
+    public void printTenant() {
+        System.out.println("=== Tenant info ===");
+        System.out.println("   Tenant name: " + this.getName());
+        System.out.println("   Address: " + this.getBuildingAddress() + " " + this.getApartmentOrStoreNumber());
+        System.out.println("   Reisdential/Commercial: " + this.isCommercial());
+        System.out.println("   Monthly Rent: " + this.getMonthlyRent());
+        System.out.println();
+
+    }
+
+
+    public void printPaymentHistory() {
+        System.out.println("=== Rent Breakdown ===");
+        System.out.println();
+
+        for (int i = 0; i < this.payments.size(); i++) {
+            RentPayment payment = this.payments.get(i); // get the individual month
+
+            System.out.println("--- Month: " + payment.getMonth() + " ---");
+            System.out.println("   Month: " + payment.getMonth());
+            System.out.println("   Amount paid: " + payment.getAmountPaid());
+            System.out.println("   Payment method: " + payment.getPaymentMethod());
+            System.out.println("   Late Fee: " + payment.getLateFee());
+            System.out.println("   Monthly Balance: " + payment.getMonthlyBalance());
+            System.out.println();
+        }
+        System.out.println("Total Balance: " + this.getTotalBalance());
+    }
+
 }
