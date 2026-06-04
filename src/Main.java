@@ -7,13 +7,13 @@ public class Main {
         System.out.println();
 
         Tenant John = new Tenant( // name of tenant, address, apt, monthly rent, isCommercial, totalBalance.
-                "John Doe", "230 Grand Street", "1A", 1000, false, 0.0);
+                "John Doe", "230 Grand Street", "1A", 1000, false);
 
-        RentPayment january2026 = new RentPayment(  // tenant, month, paymentMethod, amountPaid
-                John, "January", "Check", 100);
+        RentPayment january2026 = new RentPayment(  // tenant, month, paymentMethod, amountPaid, datePaid.
+                John, "January", "Check", 500, "01/15/26");
 
-        RentPayment february2026 = new RentPayment(  // tenant, month, paymentMethod, amountPaid
-                John, "February", "Check", 1000);
+        RentPayment february2026 = new RentPayment(  // tenant, month, paymentMethod, amountPaid, datePaid.
+                John, "February", "Check", 500,"02/15/26");
 
         John.addPayment(january2026); // testing by adding in 2 months worth of rent and MUST BE BEFORE the get totalBalance
         John.addPayment(february2026);

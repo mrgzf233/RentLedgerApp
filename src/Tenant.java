@@ -6,7 +6,7 @@ public class Tenant {
     private String apartmentOrStoreNumber;  // 1A
     private double monthlyRent; // $1,400.00
     private boolean isCommercial;
-    private double totalBalance;
+
 
     private ArrayList<RentPayment> payments;
     /* payment = single rent payment obj/one month
@@ -14,13 +14,12 @@ public class Tenant {
     */
 
 
-    public Tenant(String name, String buildingAddress, String apartmentOrStoreNumber, double monthlyRent, boolean isCommercial, double totalBalance) {
+    public Tenant(String name, String buildingAddress, String apartmentOrStoreNumber, double monthlyRent, boolean isCommercial) {
         this.name = name;
         this.buildingAddress = buildingAddress;
         this.apartmentOrStoreNumber = apartmentOrStoreNumber;
         this.monthlyRent = monthlyRent;
         this.isCommercial = isCommercial;
-        this.totalBalance = totalBalance;
         this.payments = new ArrayList<>();
     }
 
@@ -98,14 +97,14 @@ public class Tenant {
             RentPayment payment = this.payments.get(i); // get the individual month
 
             System.out.println("--- Month: " + payment.getMonth() + " ---");
-            System.out.println("   Month: " + payment.getMonth());
             System.out.println("   Amount paid: " + payment.getAmountPaid());
+            System.out.println("   Date paid: "+ payment.getDatePaid());
             System.out.println("   Payment method: " + payment.getPaymentMethod());
             System.out.println("   Late Fee: " + payment.getLateFee());
             System.out.println("   Monthly Balance: " + payment.getMonthlyBalance());
             System.out.println();
         }
-        System.out.println("Total Balance: " + this.getTotalBalance());
+        System.out.println("  Total Balance: " + this.getTotalBalance());
     }
 
 }
