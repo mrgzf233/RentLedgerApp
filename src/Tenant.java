@@ -105,6 +105,7 @@ public class Tenant {
             System.out.println();
         }
         System.out.println("  Total Balance: " + this.getTotalBalance());
+        System.out.println();
     }
 
 }
