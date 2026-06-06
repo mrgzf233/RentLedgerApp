@@ -28,7 +28,7 @@ Tracks and organizes tenant rent payment information including:
 Additional optional fields for commercial properties:
 
 - Late fees
-- Water/Sewer fees
+- Water/Sewer fees(future updates)
 
 These fields can be toggled depending on the property type.
 
