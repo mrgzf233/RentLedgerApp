@@ -6,6 +6,13 @@ public class Main {
         System.out.println("Testing two months worth of rent on one tenant");
         System.out.println();
 
+        // Adding scanner and testing it out instead of manually adding in the tenants.
+
+        Scanner sc = new Scanner(System.in);
+
+
+
+
         Tenant John = new Tenant( // name of tenant, address, apt, monthly rent, isCommercial, totalBalance.
                 "John Doe", "230 Grand Street", "1A", 1000, false);
 
