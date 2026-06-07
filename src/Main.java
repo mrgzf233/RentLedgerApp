@@ -10,6 +10,18 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter month: ");
+        String month = sc.nextLine();
+
+        System.out.print("Enter payment method: ");
+        String paymentMethod = sc.nextLine();
+
+        System.out.print("Enter amount paid: ");
+        double amountPaid = sc.nextDouble();
+        sc.nextLine();
+
+        System.out.print("Enter date paid (MM/DD/YY): ");
+        String datePaid = sc.nextLine();
 
 
 
