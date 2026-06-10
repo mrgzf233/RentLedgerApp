@@ -6,22 +6,53 @@ public class Main {
         System.out.println("Testing two months worth of rent on one tenant");
         System.out.println();
 
-        // Adding scanner and testing it out instead of manually adding in the tenants.
 
+        // SCANNER TESTING
         Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Tenant Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter building address: ");
+        String address = sc.nextLine();
+
+        System.out.print("Enter apartment/store number: ");
+        String apartment = sc.nextLine();
 
         System.out.print("Enter month: ");
         String month = sc.nextLine();
 
-        System.out.print("Enter payment method: ");
-        String paymentMethod = sc.nextLine();
-
-        System.out.print("Enter amount paid: ");
-        double amountPaid = sc.nextDouble();
+        System.out.print("Enter monthly rent: ");
+        double monthlyRent = sc.nextDouble();
         sc.nextLine();
 
-        System.out.print("Enter date paid (MM/DD/YY): ");
-        String datePaid = sc.nextLine();
+        System.out.print("Is commercial? (true/false): ");
+        boolean isCommercial = sc.nextBoolean();
+        sc.nextLine();
+
+        Tenant userTenant = new Tenant(
+                name,
+                address,
+                apartment,
+                monthlyRent,
+                isCommercial
+        );
+
+        /*
+
+        ask for rent info of the tenant created above
+
+        then create the rent?
+
+
+
+
+
+         */
+
+
+
+        // END OF SCANNER TESTING
 
 
 
