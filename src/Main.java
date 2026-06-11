@@ -44,6 +44,30 @@ public class Main {
 
         then create the rent?
 
+        System.out.print("Enter Tenant Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter the month owed: ");
+        String address = sc.nextLine();
+
+        System.out.print("Enter payment method: ");
+        String apartment = sc.nextLine();
+
+        System.out.print("Enter the amount paid: ");
+        String month = sc.nextDouble();
+
+        System.out.print("Enter the date paid: ");
+        double monthlyRent = sc.nextLine();
+        sc.nextLine();
+
+
+
+
+
+
+
+
+
 
 
 
