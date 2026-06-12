@@ -27,14 +27,14 @@ Tracks and organizes tenant rent payment information including:
 
 Additional optional fields for commercial properties:
 
-- Late fees
+- Late fees (For now adding 5% after the 1st day of the month)
 - Water/Sewer fees(future updates)
 
 These fields can be toggled depending on the property type.
 
 ### Example
 - Residential tenant → standard rent fields only
-- Commercial tenant → includes late fees and utility-related charges
+- Commercial tenant → includes late fees and utility-related charges(future update)
 
 ---
 
