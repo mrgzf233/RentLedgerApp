@@ -15,7 +15,7 @@ This project was designed to help organize rent records, lease renewals, tenant 
 Tracks and organizes tenant rent payment information including:
 
 - Monthly rent amount
-- Amount paid by tenant
+- Amount paid by tenant (if tenant overpays money for the current month it'll start deducting from the total balance)
 - Payment method (Cash/Check)
 - Payment date
 - Remaining balance for that month
@@ -27,14 +27,14 @@ Tracks and organizes tenant rent payment information including:
 
 Additional optional fields for commercial properties:
 
-- Late fees
+- Late fees (For now adding 5% after the 1st day of the month)
 - Water/Sewer fees(future updates)
 
 These fields can be toggled depending on the property type.
 
 ### Example
 - Residential tenant → standard rent fields only
-- Commercial tenant → includes late fees and utility-related charges
+- Commercial tenant → includes late fees and utility-related charges(future update)
 
 ---
 
