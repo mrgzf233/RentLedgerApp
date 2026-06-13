@@ -19,9 +19,6 @@ public class Main {
         System.out.print("Enter apartment/store number: ");
         String apartment = sc.nextLine();
 
-        System.out.print("Enter month: ");
-        String month = sc.nextLine();
-
         System.out.print("Enter monthly rent: ");
         double monthlyRent = sc.nextDouble();
         sc.nextLine();
@@ -38,46 +35,34 @@ public class Main {
                 isCommercial
         );
 
-        /*
-
-        ask for rent info of the tenant created above
-
-        then create the rent?
-
-        System.out.print("Enter Tenant Name: ");
-        String name = sc.nextLine();
 
         System.out.print("Enter the month owed: ");
-        String address = sc.nextLine();
+        String month = sc.nextLine();
 
         System.out.print("Enter payment method: ");
-        String apartment = sc.nextLine();
+        String method = sc.nextLine();
 
         System.out.print("Enter the amount paid: ");
-        String month = sc.nextDouble();
-
-        System.out.print("Enter the date paid: ");
-        double monthlyRent = sc.nextLine();
+        double amountPay = sc.nextDouble();
         sc.nextLine();
 
+        System.out.print("Enter the date paid: ");
+        String datePay = sc.nextLine();
 
-
-
-
-
-
-
-
-
-
-
-
-         */
+        RentPayment rent = new RentPayment(
+                userTenant,
+                month,
+                method,
+                amountPay,
+                datePay
+        );
+        userTenant.addPayment(rent);
+        userTenant.printTenant();
+        userTenant.printPaymentHistory();
 
 
 
         // END OF SCANNER TESTING
-
 
 
         Tenant John = new Tenant( // name of tenant, address, apt, monthly rent, isCommercial, totalBalance.
