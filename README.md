@@ -15,7 +15,7 @@ This project was designed to help organize rent records, lease renewals, tenant 
 Tracks and organizes tenant rent payment information including:
 
 - Monthly rent amount
-- Amount paid by tenant
+- Amount paid by tenant (if tenant overpays money for the current month it'll start deducting from the total balance)
 - Payment method (Cash/Check)
 - Payment date
 - Remaining balance for that month
