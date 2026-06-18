@@ -60,7 +60,7 @@ public class Main {
         userTenant.printTenant();
         userTenant.printPaymentHistory();
 
-
+        // make a tenant array list here to auto store the tenants created.
 
         // END OF SCANNER TESTING
 
